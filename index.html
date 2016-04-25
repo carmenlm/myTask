@@ -20,7 +20,67 @@
 	<![endif]-->
 </head>
 <body>
-<h1>Body</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>To-Do List</h1>
+
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<form class="form" id="formulario" name="formulario">
+				<div class="form-group">
+					<label for="tarea">Tarea</label>
+					<textarea name="tarea" id="tarea" class="form-control" rows="2" required="required"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="posicion">Posicion</label>
+					<input type="number" name="posicion" id="posicion" class="form-control" value="" min="0">
+					<div class="btn-group">
+
+						<input type="button" class="btn btn-default" id="addBegin" name="addBegin"
+						       value="Añadir al Principio"/>
+						<input type="button" class="btn btn-default" id="addEnd" name="addEnd" value="Añadir al Final"/>
+						<input type="button" class="btn btn-default" id="addPos" name="addPos"
+						       value="Añadir registro (pos)"/>
+						<input type="button" class="btn btn-default" id="showPos" name="showPos"
+						       value="Mostrar registro (pos)"/>
+						<input type="button" class="btn btn-default" id="removePos" name="removePos"
+						       value="Eliminar registro (pos)"/>
+					</div>
+
+				</div>
+
+				<div class="btn-group">
+
+
+					<button type="button" class="btn btn-default" id="showAll" name="showAll">Mostrar Todos</button>
+					<button type="button" class="btn btn-default" id="showAsc" name="showAsc">Mostrar ascendentes
+					</button>
+					<button type="button" class="btn btn-default" id="showDes" name="showDes">Mostrar descendentes
+					</button>
+					<button type="button" class="btn btn-default" id="removeAll" name="removeAll">Eliminar registros
+					</button>
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+	<div class="row">
+		<div id="informacion" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h4>Actualmente no hay tareas registradas</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div id="tareas" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+		</div>
+	</div>
+
+</div>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
